@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work · Lehlohonolo</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">L.</div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="portfolio.html" class="nav-link active">Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Work</h1>
+            <p class="page-subtitle">Recent projects and case studies</p>
+        </div>
+        <div id="portfolio-header-canvas"></div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio-page">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                <button class="filter-btn" data-filter="3d">3D</button>
+            </div>
+            
+            <div class="portfolio-grid expanded">
+                <div class="portfolio-card featured" data-category="mobile" id="project-1">
+                    <img src="https://via.placeholder.com/600x400" alt="Lirante App" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>Lirante</h3>
+                        <p>Food Delivery App</p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Mobile</span>
+                            <span>iOS</span>
+                        </div>
+                        <button class="btn-outline small">View Case Study</button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card featured" data-category="web" id="project-2">
+                    <img src="https://via.placeholder.com/600x400" alt="TaskFlow" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>TaskFlow</h3>
+                        <p>Project Management Platform</p>
+                        <div class="project-tags">
+                            <span>Web App</span>
+                            <span>Dashboard</span>
+                            <span>React</span>
+                        </div>
+                        <button class="btn-outline small">View Case Study</button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card featured" data-category="mobile" id="project-3">
+                    <img src="https://via.placeholder.com/600x400" alt="HealthTrack" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>HealthTrack</h3>
+                        <p>Fitness & Health App</p>
+                        <div class="project-tags">
+                            <span>Mobile</span>
+                            <span>Health</span>
+                            <span>Wearables</span>
+                        </div>
+                        <button class="btn-outline small">View Case Study</button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card featured" data-category="web" id="project-4">
+                    <img src="https://via.placeholder.com/600x400" alt="EcoMarket" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>EcoMarket</h3>
+                        <p>Sustainable E-commerce</p>
+                        <div class="project-tags">
+                            <span>E-commerce</span>
+                            <span>Web Design</span>
+                            <span>UX</span>
+                        </div>
+                        <button class="btn-outline small">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card featured" data-category="3d" id="project-5">
+                    <img src="https://via.placeholder.com/600x400" alt="3D Portfolio" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>3D Interactive</h3>
+                        <p>Interactive 3D Experience</p>
+                        <div class="project-tags">
+                            <span>Three.js</span>
+                            <span>WebGL</span>
+                            <span>3D</span>
+                        </div>
+                        <button class="btn-outline small">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card featured" data-category="uiux" id="project-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Banking App" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>NeoBank</h3>
+                        <p>Digital Banking Platform</p>
+                        <div class="project-tags">
+                            <span>Fintech</span>
+                            <span>UI/UX</span>
+                            <span>Research</span>
+                        </div>
+                        <button class="btn-outline small">View Case Study</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Client Reviews</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" id="testimonial-1">
+                    <div class="testimonial-header">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Jayesh Patil</h4>
+                            <p>CEO, Lirante</p>
+                        </div>
+                        <div class="rating">5.0 ⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p>Exceptional work! The attention to detail and user experience design is outstanding. Highly recommended.</p>
+                </div>
+                
+                <div class="testimonial-card" id="testimonial-2">
+                    <div class="testimonial-header">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>CTO, TechCorp</p>
+                        </div>
+                        <div class="rating">5.0 ⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p>One of the best developers I've worked with. Delivered beyond expectations every time.</p>
+                </div>
+                
+                <div class="testimonial-card" id="testimonial-3">
+                    <div class="testimonial-header">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <p>Product Manager</p>
+                        </div>
+                        <div class="rating">5.0 ⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p>Incredible technical skills and great communication. Made our project a huge success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <h2>Have an awesome project?</h2>
+                <a href="index.html#contact-form" class="btn-primary">Let's Talk <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lehlohonolo. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

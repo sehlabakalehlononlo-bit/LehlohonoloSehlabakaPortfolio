@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience · Lehlohonolo</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">L.</div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="experience.html" class="nav-link active">Experience</a>
+                <a href="portfolio.html" class="nav-link">Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Work Experience</h1>
+            <p class="page-subtitle">My professional journey</p>
+        </div>
+        <div id="experience-header-canvas"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-page">
+        <div class="container">
+            <div class="experience-timeline expanded">
+                <div class="timeline-left">
+                    <div class="timeline-item detailed">
+                        <div class="company">Cognizant, Mumbai</div>
+                        <div class="date">Sep 2016 - July 2020</div>
+                        <div class="role">Experience Designer</div>
+                        <p class="description">Led design initiatives for major banking clients, creating intuitive digital banking experiences. Collaborated with cross-functional teams to deliver high-quality products.</p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Redesigned mobile banking app, increasing user engagement by 40%</li>
+                                <li>Led a team of 5 designers on enterprise projects</li>
+                                <li>Received "Design Excellence" award in 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item detailed">
+                        <div class="company">Sugee Pvt Ltd, Mumbai</div>
+                        <div class="date">Sep 2020 - July 2023</div>
+                        <div class="role">UI/UX Designer</div>
+                        <p class="description">Designed and delivered multiple web and mobile applications for startups and established businesses.</p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Designed 15+ successful product launches</li>
+                                <li>Improved conversion rates by 25% through UX optimization</li>
+                                <li>Established design system used across all company products</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item detailed">
+                        <div class="company">Cinetstox, Mumbai</div>
+                        <div class="date">Sep 2023 - Present</div>
+                        <div class="role">Lead UX Designer</div>
+                        <p class="description">Leading design strategy for fintech platform, managing design team, and mentoring junior designers.</p>
+                        <div class="achievements">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Led redesign of trading platform with 100K+ users</li>
+                                <li>Implemented design thinking workshops across organization</li>
+                                <li>Reduced user onboarding time by 50%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-right">
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">Figma</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Adobe XD</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Sketch</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-section">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Computer Science</h4>
+                            <p>University of Mumbai, 2016</p>
+                            <p>CGPA: 8.5/10</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>UX Design Certificate</h4>
+                            <p>Interaction Design Foundation, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experience-canvas"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lehlohonolo. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
